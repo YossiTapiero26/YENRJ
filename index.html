@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Y ENRJ</title>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo"><span>Y</span> ENRJ</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <nav>
+        <ul>
+            <li><a href="#acceuil" onclick="toggleMenu();">ACCUEIL</a></li>
+            <li><a href="#vmc" onclick="toggleMenu();">VMC DOUBLE FLUX 1€</a></li>
+            <li><a href="#pac" onclick="toggleMenu();">POMPE À CHALEUR </a></li>
+            <li><a href="#poele" onclick="toggleMenu();">POÈLE À GRANULÉS</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
+            <a href="tester_eligibilite.html" class="devis" onclick="toggleMenu();">DEVIS</a>
+        </ul>
+    </nav>
+</header>
+
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>INSTALLEZ UNE VMC DOUBLE FLUX POUR 1€</h2>
+        <p>Renouvelez l'air pollué de votre maison, et diminuez votre consommation de chauffage.</p>
+        <a href="tester_eligibilite.html" class="tester_eligibilite">TESTER MON ÉLIGIBILITÉ</a>
+        <a href="#contact" class="contacter_expert">CONTACTER UN EXPERT</a>
+    </div>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky" , window.scrollY > 0)
+    } )
+</script>
+
+<section class="produit" id="vmc">
+    <div class="info_produit">
+        <div class="texte_vmc">
+            <h2 class="titre_vmc"><span>VMC</span> Double Flux</h2>
+            <p> La VMC (Ventilation mécanique contrôlée) double flux présente une double fonctionnalité. Elle permet à la fois de chasser l'humidité, l'air pollué de votre maison mais également de renouveler
+                l'air intérieur. Cette seconde fonctionnalité permet ainsi une réduction de votre facture énergétique pouvant aller jusqu'à 30%. En effet, avec son échangeur thermique, les déperditions de chaleur sont considérablement allégées par rapport aux déperditions des versions classiques de VMC.
+            </p>
+        </div>
+        <div class="boite">
+            <div class="box">
+				<div class="box_image">
+					<img src="vmc_double_flux.jpg" alt="vmc">
+				</div>
+				<div class="box_devis">
+					<a href="tester_eligibilite.html" class="devis_logo">DEVIS VMC</a>
+				</div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="produit altsection" id="pac">
+    <div class="info_produit">
+		<div class="texte_pac">
+			<h2 class="titre_pac"><span>P</span>ompe à chaleur</h2>
+			<p>La pompe à chaleur est sûrement le système de chauffage par excellence pour votre logement. Elle capte les calories présentes à l'extérieur dans l'air, l'eau ou le sol et les transforme afin d'assurer un confort thermique. Ainsi, 80% de l'énergie produite est écologique et entièrement gratuite. </p>
+			<p>Elle ne nécessite que peu d'électricité pour fonctionner étant donné qu'elle puise son énergie dans l'environnement.  </p>
+		</div>
+		<div class="boite">
+			<div class="box">
+				<div class="box_image">
+					<img src="pompe-a-chaleur-air-eau.jpg" alt="pompe-a-chaleur-air-eau">
+				</div>
+				<div class="box_devis">
+					<a href="tester_eligibilite.html" class="devis_logo">DEVIS PAC</a>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+
+<section class="produit" id="poele">
+    <div class="info_produit">
+		<div class="texte_poele">
+			<h2 class="titre_poele"><span>P</span>oêle à granulés</h2>
+			<p>Le poêle à granulés est un appareil de chauffage écologique extrêmement efficace. Les granulés sont fabriqués en recyclant les sciures de bois qui se trouvent être une ressource naturelle renouvelable avec un faible impact sur l'environnement.</p>
+			<p>De plus, cet appareil est extrêmement performant : le rendement moyen d'un poêle à granulés est compris entre 85 et 98%. </p>
+			<p>Fonctionnant de manière automatique, le poêle à granulés fait partie des modes de chauffage les moins chers du marché.</p>
+		</div>
+		<div class="boite">
+			<div class="box">
+				<div class="box_image">
+					<img src="poele-a-granules.jpg" alt="poele-a-granules">
+				</div>
+				<div class="box_devis">
+					<a href="tester_eligibilite.html" class="devis_logo">DEVIS Poêle à granulés</a>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+
+<section class="partenaires altsection" id="partenaires">
+    <h2 class="titre_partenaires"><span>N</span>os partenaires qui financent vos projets</h2>
+    <div class="images_partenaires">
+    <img src="logo-Total.jpg" alt="Total" width="280"  height="220">
+    <img src="primerenov.png" alt="MaPrimeRenov" width="280"  height="220">
+    <img src="edf_logo.jpg" alt="EDF" width="340" height="220">
+    <img src="engie.jpg" alt="engie" width="310" height="220">
+    </div>
+</section>
+
+<div class="en_savoir_plus altsection">
+	<h2><span>E</span>n savoir plus sur nos produits</h2>
+</div>
+
+<section class="plus altsection" id="plus">
+    <figure>
+        <video width="300" height="200" controls poster="fond_yenrj.jpg"   >
+            <source class="video_pac" width="300" height="200" src="Fonctionnement_pac_air_eau.mp4">
+        </video>
+        <figcaption>Fonctionnement d'une Pompe à chaleur AIR/EAU</figcaption>
+    </figure>
+
+    <figure>
+    <video width="300" height="200" controls poster="fond_yenrj.jpg"   >
+        <source class="video_vmc" width="300" height="200" src="Fonctionnement_vmc_double_flux.mp4">
+    </video>
+    <figcaption>Fonctionnement d'une VMC Double Flux</figcaption>
+    </figure>
+    
+    <figure>
+    <video width="300" height="200" controls poster="fond_yenrj.jpg"   >
+        <source class="video_poêle" width="300" height="200" src="Fonctionnement_poêle_à_granlués.mp4">
+    </video>
+    <figcaption>Fonctionnement d'un Poêle à granulés</figcaption>
+    </figure>   
+
+</section>
+
+<section class="contact" id="contact">
+    <div class="contenu_titre_contact">
+        <h2 class="titre-text"><span>C</span>ontact</h2>
+        <p>Des questions sur nos équipements, service ou demande de devis ?</p>
+        <p>Vous pouvez remplir ce formulaire pour toutes demandes afin de recevoir une réponse rapide de notre équipe.</p>
+    </div>
+    <div class="contactform">
+        <h3>NOS EXPERTS VOUS RÉPONDENT</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="Prénom">
+        </div>
+        <div class="inputboite">
+            <input type="tel" placeholder="Numéro de téléphone">
+        </div>
+        <div class="inputboite">
+           <input type="text" placeholder="email">
+        </div>
+        <div class="inputboite">
+           <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="ENVOYER">
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p>copyright 2022 <a href="#">Y</a> ENRJ. Tous droits réservés.</p>
+</div>
+</body>
+</html>
